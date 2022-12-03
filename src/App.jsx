@@ -1,11 +1,9 @@
 import './App.css';
-import Header from './header';
-
+import Counter from './Components With Redex/Counter';
+import Todo from './Components With Redex/todo';
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    </div>
+    <Todo/>
   );
 }
 
