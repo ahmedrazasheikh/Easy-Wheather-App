@@ -1,27 +1,21 @@
-// import React, { useState } from 'react'
-import { useState, useEffect, useRef } from "react";
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { inputValue }  from './todoSlice'
 const Todo = () => {
+  const text = useSelector((state) => state.input.rr)
+  const text2 = useSelector((state) => state.input.ss)
+  const dispatch = useDispatch()
+  let [input, setInput ] =useState()
 
-    const[todo,setTodo] = useState()
-    const count = useRef();
-    const[todoArray,setTodoArray] = useState([])
-    console.log(todo)
-
-    console.log(todoArray)
-const valuePush = ()=>{
-count.current.value = ''
-
-todoArray.push(todo)
-}
-
+  console.log(text)
   return (
     <div>
-      <input  ref={count} type="text"  onChange={(e)=>setTodo(e.target.value)} />  
-      <button onClick={valuePush }  >Add</button>
-
-      <ul className='ul'  >
-    <li>{todoArray}</li>
-      </ul>
+      
+<h1>Ahmed Raza</h1>
+<input type="text"   onChange={(e)=>{setInput(e.target.value)}}  />
+<button   onClick={()=>{dispatch(inputValue(input))}}  >Click Me</button>
+<h1>{text}</h1>
+<h1>{text2}</h1>
 
     </div>
   )
