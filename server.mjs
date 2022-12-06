@@ -23,7 +23,8 @@ app.get('/time', (req, res) => {
 })
 
 const __dirname = path.resolve();
-app.use('/', express.static(path.join(__dirname, './build')))
+console.log(__dirname)
+// app.use('/', express.static(path.join(__dirname, './build')))
 app.use('*', express.static(path.join(__dirname, './build')))
 
 
