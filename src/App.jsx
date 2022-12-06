@@ -1,8 +1,8 @@
-import './App.css';
-import Todo from './Components With Redex/todo';
+import './index.css'
+import Wheather from './wheathe';
 function App() {
   return (
-<Todo/>
+    <Wheather/>
   );
 }
 
