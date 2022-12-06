@@ -21,7 +21,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "react-scripts start && server.mjs",
+    "start": "react-scripts start && node server.mjs",
     "dev": "node --watch server.mjs",
     "build": "react-scripts build ",
     "test": "react-scripts test",
