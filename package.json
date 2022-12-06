@@ -23,11 +23,7 @@
   "scripts": {
     "start": "react-scripts start && server.mjs",
     "dev": "node --watch server.mjs",
-<<<<<<< HEAD
     "build": "react-scripts build ",
-=======
-    "build": "react-scripts build && server.mjs",
->>>>>>> 62b01b4da2cb448271db921c1288483adaea1ebd
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
